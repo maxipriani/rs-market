@@ -1,0 +1,28 @@
+[workspace]
+members = [
+    "crates/monolith",
+    "crates/rs-server"
+]
+resolver = "2"  
+
+[workspace.package]
+edition = "2024"
+
+[workspace.dependencies]
+uuid = { version = "1.20.0", features = ["v4"] }
+time = { version = "0.3.47" }
+thiserror = { version = "2.0.18" }
+rust_decimal = { version = "1.40.0", features = ["macros"] }
+async-trait = { version = "0.1.89" }
+sqlx = { version = "0.8.6", default-features = false, features = [
+    "runtime-tokio-rustls",
+    "postgres",
+    "macros",
+    "uuid",
+    "rust_decimal",
+    "time"
+] }
+tokio = { version = "1.49.0", default-features = false, features = ["full"] }
+config = { version = "0.15.19" }
+dotenvy = { version = "0.15.7" }
+serde = { version = "1.0.228", features = ["derive"] }

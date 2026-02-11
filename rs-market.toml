@@ -1,0 +1,5 @@
+[database]
+url = ""
+max_connections = 5
+acquire_timeout_ms = 3000
+statement_timeout_ms = 5000 # not wired yet

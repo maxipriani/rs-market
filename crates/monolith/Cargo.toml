@@ -1,0 +1,10 @@
+[package]
+name = "monolith"
+edition = { workspace =  true }
+
+[dependencies]
+rs-server = { path = "../rs-server" }
+sqlx = { workspace = true }
+rust_decimal = { workspace = true }
+tokio = { workspace = true }
+config = { workspace = true }

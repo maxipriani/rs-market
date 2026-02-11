@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="rs-market logo">
+  <defs>
+    <style>
+      :root { --c:#FF2BD6; } /* neon magenta */
+      .border { stroke:var(--c); stroke-width:10; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .card   { stroke:var(--c); stroke-width:8;  fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.95; }
+      .detail { stroke:var(--c); stroke-width:7;  fill:none; stroke-linecap:round; stroke-linejoin:round; opacity:.85; }
+      .fill   { fill:var(--c); opacity:.85; }
+    </style>
+  </defs>
+
+  <path class="border" d="M256 56 L456 256 L256 456 L56 256 Z"/>
+
+  <g>
+    <rect class="card" x="156" y="186" width="200" height="140" rx="22" ry="22"/>
+    <path class="detail" d="M176 226 H336"/>
+    <rect class="detail" x="176" y="252" width="54" height="38" rx="8" ry="8"/>
+    <circle class="fill" cx="316" cy="292" r="6"/>
+  </g>
+</svg>
